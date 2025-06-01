@@ -21,42 +21,6 @@
 
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
-
-	<script>
-      (function (C, A, L) {
-        let p = function (a, ar) {
-          a.q.push(ar);
-        };
-        let d = C.document;
-        C.Cal =
-          C.Cal ||
-          function () {
-            let cal = C.Cal;
-            let ar = arguments;
-            if (!cal.loaded) {
-              cal.ns = {};
-              cal.q = cal.q || [];
-              d.head.appendChild(d.createElement("script")).src = A;
-              cal.loaded = true;
-            }
-            if (ar[0] === L) {
-              const api = function () {
-                p(api, arguments);
-              };
-              const namespace = ar[1];
-              api.q = api.q || [];
-              if (typeof namespace === "string") {
-                cal.ns[namespace] = cal.ns[namespace] || api;
-                p(cal.ns[namespace], ar);
-                p(cal, ["initNamespace", namespace]);
-              } else p(cal, ar);
-              return;
-            }
-            p(cal, ar);
-          };
-      })(window, "https://app.cal.com/embed/embed.js", "init");
-      Cal("init");
-    </script>
   </head>
   <body>
 
@@ -65,17 +29,17 @@
 				<div class="row">
 					<div class="col-md-6 d-flex align-items-center">
 						<p class="mb-0 phone pl-md-2">
-							<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +33 6 59 09 05 19</a> 
-							<a href="#"><span class="fa fa-paper-plane mr-1"></span>sabrinapointet@gmail.com</a>
+							<a href="javascript:void(0);" class="mr-2"><span class="fa fa-phone mr-1"></span> +33 6 59 09 05 19</a> 
+							<a href="javascript:void(0);"><span class="fa fa-paper-plane mr-1"></span>sabrinapointet@gmail.com</a>
 						</p>
 					</div>
 					<div class="col-md-6 d-flex justify-content-md-end">
 						<div class="social-media">
 			    		<p class="mb-0 d-flex">
-			    		<!--	<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>-->
+			    		<!--	<a href="javascript:void(0);" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+			    			<a href="javascript:void(0);" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+			    			<a href="javascript:void(0);" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+			    			<a href="javascript:void(0);" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>-->
 			    		</p>
 		        </div>
 					</div>
@@ -108,7 +72,7 @@
           	<h1 class="mb-4">Des solutions pour vos fidèles compagnons</h1>
 			<button class="btn btn-primary mb-4 px-2 py-3"
 					data-cal-config='{"layout":"month_view"}' 
-					data-cal-link="sabrina-sab-9vczjh">
+					data-cal-link="solutionsdesabrina">
 				<p class="mb-0" style="color: white">Réserver un rendez-vous</p>
 			</button>
 		  </div>
@@ -138,7 +102,7 @@
               </div>
               <div class="media-body">
                 <h3 class="heading">Promenade</h3>
-                <p>Des promenades régulières et énergétiques pour que vos fidèles compagnons se dépensent.</p>
+                <p>Des promenades régulières et dynamiques pour que vos fidèles compagnons se dépensent.</p>
                 <a href="#pricing" class="btn-custom d-flex align-items-center justify-content-center"><span class="fa fa-chevron-right"></span><i class="sr-only">En savoir plus</i></a>
               </div>
             </div>    
@@ -175,7 +139,7 @@
 	    					<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-stethoscope"></span></div>
 	    					<div class="text pl-3">
 	    						<h4>Conseils sérieux</h4>
-	    						<p>Une experience solide avec de nombreux animaux et une certification de comportementaliste animalier reconnue par l'Etat.</p>
+	    						<p>Une expérience solide avec de nombreux animaux et une certification de comportementaliste animalier reconnue par l'Etat.</p>
 	    					</div>
 	    				</div>
 	    				<div class="col-md-6 services-2 w-100 d-flex">
@@ -251,7 +215,8 @@
         </div>
     	</div>
     </section>
-<!--
+
+	<!--
     <section class="ftco-section bg-light ftco-faqs">
     	<div class="container">
     		<div class="row">
@@ -270,7 +235,7 @@
     			<div class="col-lg-6">
     				<div class="heading-section mb-5 mt-5 mt-lg-0">
 	            <h2 class="mb-3">Frequently Asks Questions</h2>
-	            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+	            <p>...</p>
     				</div>
     				<div id="accordion" class="myaccordion w-100" aria-multiselectable="true">
 						  <div class="card">
@@ -285,11 +250,11 @@
 						    <div class="collapse show" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
 						      <div class="card-body py-3 px-0">
 						      	<ol>
-						      		<li>Far far away, behind the word mountains</li>
-						      		<li>Consonantia, there live the blind texts</li>
-						      		<li>When she reached the first hills of the Italic Mountains</li>
-						      		<li>Bookmarksgrove, the headline of Alphabet Village</li>
-						      		<li>Separated they live in Bookmarksgrove right</li>
+						      		<li>...</li>
+						      		<li>..</li>
+						      		<li>...</li>
+						      		<li>...</li>
+						      		<li>...</li>
 						      	</ol>
 						      </div>
 						    </div>
@@ -307,11 +272,11 @@
 						    <div class="collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
 						      <div class="card-body py-3 px-0">
 						      	<ol>
-						      		<li>Far far away, behind the word mountains</li>
-						      		<li>Consonantia, there live the blind texts</li>
-						      		<li>When she reached the first hills of the Italic Mountains</li>
-						      		<li>Bookmarksgrove, the headline of Alphabet Village</li>
-						      		<li>Separated they live in Bookmarksgrove right</li>
+						      		<li>...</li>
+						      		<li>..</li>
+						      		<li>...</li>
+						      		<li>...</li>
+						      		<li>...</li>
 						      	</ol>
 						      </div>
 						    </div>
@@ -329,11 +294,11 @@
 						    <div class="collapse" id="collapseThree" role="tabpanel" aria-labelledby="headingTwo">
 						      <div class="card-body py-3 px-0">
 						      	<ol>
-						      		<li>Far far away, behind the word mountains</li>
-						      		<li>Consonantia, there live the blind texts</li>
-						      		<li>When she reached the first hills of the Italic Mountains</li>
-						      		<li>Bookmarksgrove, the headline of Alphabet Village</li>
-						      		<li>Separated they live in Bookmarksgrove right</li>
+						      		<li>...</li>
+						      		<li>..</li>
+						      		<li>...</li>
+						      		<li>...</li>
+						      		<li>...</li>
 						      	</ol>
 						      </div>
 						    </div>
@@ -350,7 +315,7 @@
 						    </div>
 						    <div class="collapse" id="collapseFour" role="tabpanel" aria-labelledby="headingTwo">
 						      <div class="card-body py-3 px-0">
-						      	<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+						      	<p>...</p>
 						      </div>
 						    </div>
 						  </div>
@@ -375,27 +340,12 @@
                 <div class="testimony-wrap py-4">
                 	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
                   <div class="text">
-                    <p class="mb-4">Nous avons fait appel a Sabrina 2 fois pour nos 2 Cane Corso et notre chat. Elle est très professionnelle, nous avons 100% confiance en elle. A notre retour de vacances, nous avons retrouvé nos animaux aussi bien qu'avant de partir. Elle est aux petits soins, il n'y a aucun doute qu'elle adore venir s'occuper de nos animaux. Nous la remercions encore pour sa disponibilité et referons appel a elle pour les prochaines fois.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Jennifer H</p>
-		                    <span class="position">Client</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-                  <div class="text">
-                    <p class="mb-4">Personne de confiance , très agréable qui est passionnée des chiens et qui est très à l'écoute de leur bien être.  Voilà plusieurs fois que nous faisons appel à Sabrina pour garder notre vieille chienne qui ne peut plus partir en vacances avec nous, mais nous partons l'esprit tranquille. A notre retour nous retrouvons notre chienne apaisée sans aucun stress. Nous recommandons vivement Sabrina.</p>
+                    <p class="mb-4">Sabrina m'a accompagnée avec une grande bienveillance et un professionnalisme exemplaire dans l'élaboration de mes bilans prévisionnels ainsi que dans le lancement de mon auto-entreprise. Sa disponibilité et son écoute attentive m'ont été d'une aide précieuse. Je la recommande vivement</p>
                     <div class="d-flex align-items-center">
                     	<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
                     	<div class="pl-3">
-		                    <p class="name">Pierre Adrien B</p>
-		                    <span class="position">Client</span>
+		                    <p class="name">Delphine G</p>
+		                    <span class="position">⭐⭐⭐⭐⭐ Parfait</span>
 		                  </div>
 	                  </div>
                   </div>
@@ -410,7 +360,7 @@
                     	<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
                     	<div class="pl-3">
 		                    <p class="name">Odette D</p>
-		                    <span class="position">Client</span>
+		                    <span class="position">⭐⭐⭐⭐⭐ Parfait</span>
 		                  </div>
 	                  </div>
                   </div>
@@ -420,12 +370,27 @@
                 <div class="testimony-wrap py-4">
                 	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
                   <div class="text">
-                    <p class="mb-4">Sabrina m'a accompagnée avec une grande bienveillance et un professionnalisme exemplaire dans l'élaboration de mes bilans prévisionnels ainsi que dans le lancement de mon auto-entreprise. Sa disponibilité et son écoute attentive m'ont été d'une aide précieuse. Je la recommande vivement</p>
+                    <p class="mb-4">Nous avons fait appel a Sabrina 2 fois pour nos 2 Cane Corso et notre chat. Elle est très professionnelle, nous avons 100% confiance en elle. A notre retour de vacances, nous avons retrouvé nos animaux aussi bien qu'avant de partir. Elle est aux petits soins, il n'y a aucun doute qu'elle adore venir s'occuper de nos animaux. Nous la remercions encore pour sa disponibilité et referons appel a elle pour les prochaines fois.</p>
+                    <div class="d-flex align-items-center">
+                    	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                    	<div class="pl-3">
+		                    <p class="name">Jennifer H</p>
+		                    <span class="position">⭐⭐⭐⭐⭐ Parfait</span>
+		                  </div>
+	                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
+                  <div class="text">
+                    <p class="mb-4">Personne de confiance , très agréable qui est passionnée des chiens et qui est très à l'écoute de leur bien être.  Voilà plusieurs fois que nous faisons appel à Sabrina pour garder notre vieille chienne qui ne peut plus partir en vacances avec nous, mais nous partons l'esprit tranquille. A notre retour nous retrouvons notre chienne apaisée sans aucun stress. Nous recommandons vivement Sabrina.</p>
                     <div class="d-flex align-items-center">
                     	<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
                     	<div class="pl-3">
-		                    <p class="name">Delphine G</p>
-		                    <span class="position">Client</span>
+		                    <p class="name">Pierre Adrien B</p>
+		                    <span class="position">⭐⭐⭐⭐⭐ Parfait</span>
 		                  </div>
 	                  </div>
                   </div>
@@ -437,10 +402,10 @@
                   <div class="text">
                     <p class="mb-4">Nous sommes tellement content d'avoir trouvé Sabrina. Nos 2 chiennes l'adorent et nous les laissons les yeux fermés ! Professionnelle,  disponible et attentionnée envers les animaux.  Je recommande !</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
+                    	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
                     	<div class="pl-3">
 		                    <p class="name">Alexane S</p>
-		                    <span class="position">Client</span>
+		                    <span class="position">⭐⭐⭐⭐⭐ Parfait</span>
 		                  </div>
 	                  </div>
                   </div>
@@ -474,7 +439,7 @@
 
 	            	<a href="javascript:void(0);"
 						data-cal-config='{"layout":"month_view"}' 
-						data-cal-link="sabrina-sab-9vczjh/domicile"
+						data-cal-link="solutionsdesabrina/domicile"
 					    class="btn btn-primary d-block px-2 py-3">Réserver des visites à domicile</a>
 	            </div>
 	          </div>
@@ -494,7 +459,7 @@
 
 		            <a href="javascript:void(0);"
 						data-cal-config='{"layout":"month_view"}' 
-						data-cal-link="sabrina-sab-9vczjh/promenade"
+						data-cal-link="solutionsdesabrina/promenade"
 						class="btn btn-primary d-block px-2 py-3">Réserver des promenades</a>
 	            </div>
 	          </div>
@@ -513,8 +478,8 @@
 		            </ul>
 		            <a href="javascript:void(0);"
 						data-cal-config='{"layout":"month_view"}' 
-						data-cal-link="sabrina-sab-9vczjh/piscine"
-						class="btn btn-primary d-block px-2 py-3">Réserver une séance piscine</a>
+						data-cal-link="solutionsdesabrina/piscine"
+						class="btn btn-primary d-block px-2 py-3">Réserver des séances piscine</a>
 	            </div>
 	          </div>
 	        </div>
@@ -620,15 +585,15 @@
 						<h2 class="footer-heading">Les Solutions De Sabrina</h2>
 						<p>Les Solutions de Sabrina est une entreprise de services animaliers, de conseils divers et d'immobilier.</p>
 						<ul class="ftco-footer-social p-0">
-             <!-- <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
-              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
-              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>-->
+             <!-- <li class="ftco-animate"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>-->
             </ul>
 					</div>
 					<div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
 						<h2 class="footer-heading">Liens rapides</h2>
 						<ul class="list-unstyled">
-						<li><a href="#" class="py-2 d-block">Accueil</a></li>
+						<li><a href="" class="py-2 d-block">Accueil</a></li>
 						<li><a href="#about" class="py-2 d-block">A propos</a></li>  
 						<li><a href="#avis" class="py-2 d-block">Avis</a></li>            
 						<li><a href="#pricing" class="py-2 d-block">Tarifs</a></li>
@@ -639,9 +604,9 @@
 						<h2 class="footer-heading">Une question ?</h2>
 						<div class="block-23 mb-3">
               <ul>
-                <li><span class="icon fa fa-map"></span><span class="text">9 rue du Gaudichet, Meximieux, France</span></li>
-                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+33 659090519</span></a></li>
-                <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">sabrinapointet@gmail.com</span></a></li>
+                <li><span class="icon fa fa-map"></span><span class="text">01800 Meximieux, France</span></li>
+                <li><a href="javascript:void(0);"><span class="icon fa fa-phone"></span><span class="text">+33 659090519</span></a></li>
+                <li><a href="javascript:void(0);"><span class="icon fa fa-paper-plane"></span><span class="text">sabrinapointet@gmail.com</span></a></li>
               </ul>
             </div>
 					</div>
