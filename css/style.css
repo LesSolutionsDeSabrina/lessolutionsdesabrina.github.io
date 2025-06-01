@@ -6492,6 +6492,10 @@ button.bg-dark:focus {
 .my-4 {
   margin-top: 1.5rem !important; }
 
+.mt-8,
+.my-8 {
+  margin-top: 3rem !important; }
+
 .mr-4,
 .mx-4 {
   margin-right: 1.5rem !important; }
@@ -6499,6 +6503,10 @@ button.bg-dark:focus {
 .mb-4,
 .my-4 {
   margin-bottom: 1.5rem !important; }
+
+.mb-8,
+.my-8 {
+  margin-bottom: 3rem !important; }
 
 .ml-4,
 .mx-4 {
@@ -9822,4 +9830,11 @@ textarea.form-control {
 .colorized {
   width: 40px;
   height: 40px;
+}
+
+@media (max-width: 768px) {
+  .mobile-margin {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
 }
