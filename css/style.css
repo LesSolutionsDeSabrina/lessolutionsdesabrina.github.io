@@ -2072,6 +2072,8 @@ fieldset:disabled a.btn {
 .btn-primary {
   color: #fff;
   background-color: #007bff;
+  overflow: hidden;
+  text-overflow: ellipsis;
   border-color: #007bff; }
   .btn-primary:hover {
     color: #fff;
@@ -9011,13 +9013,14 @@ textarea.form-control {
   position: relative;
   z-index: 0;
   overflow: hidden;
-  padding: 7em 0; }
+  padding: 3.5em 0; }
   .footer a {
     color: #00bd56; }
   .footer p {
     color: rgba(255, 255, 255, 0.6); }
   .footer .copyright {
     color: rgba(255, 255, 255, 0.3);
+    margin: 0px;
     color: #999999; }
   .footer .footer-heading {
     font-size: 22px;
@@ -9458,8 +9461,7 @@ textarea.form-control {
   padding: 0; }
   .block-23 ul li, .block-23 ul li > a {
     display: table;
-    line-height: 1.5;
-    margin-bottom: 15px; }
+    line-height: 1.5; }
   .block-23 ul li span {
     color: rgba(255, 255, 255, 0.7); }
   .block-23 ul li .icon, .block-23 ul li .text {
